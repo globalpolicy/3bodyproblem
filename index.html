@@ -1,0 +1,26 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+</head>
+
+<body>
+    <div id="canvas">
+        <script src="sketch.js"></script>
+    </div>
+    <div>
+        <input type="button" id="btnStart" value="Start" onclick="onStartClick()">
+        <label for="rangeDt">dt</label>
+        <input type="range" id="rangeDt" min="1" max="100" value="1" oninput="sliderMoved(this.value);">
+        <span id="spanDt">1</span>
+    </div>
+    <div>
+        <input type="checkbox" id="chkBoxtrace">Trace
+    </div>
+    <div id="massesDiv">
+
+    </div>
+</body>
+
+</html>
